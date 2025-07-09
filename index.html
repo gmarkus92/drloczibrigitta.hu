@@ -184,6 +184,29 @@ header {
 
   </style>
 </head>
+
+<script>
+  function adjustPadding() {
+    const header = document.querySelector('header');
+    const main = document.querySelector('main');
+    if (!header || !main) return;
+
+    const headerHeight = header.offsetHeight;
+    main.style.paddingTop = headerHeight + 'px';
+  }
+
+  window.addEventListener('load', adjustPadding);
+  window.addEventListener('resize', adjustPadding);
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+  
+</script>
+  
 <body>
 
   <!-- Navigáció -->
@@ -347,27 +370,6 @@ header {
     © 2025 Dr. Lóczi Brigitta – Minden jog fenntartva.
   </footer>
 
-<script>
-  function adjustPadding() {
-    const header = document.querySelector('header');
-    const main = document.querySelector('main');
-    if (!header || !main) return;
-
-    const headerHeight = header.offsetHeight;
-    main.style.paddingTop = headerHeight + 'px';
-  }
-
-  window.addEventListener('load', adjustPadding);
-  window.addEventListener('resize', adjustPadding);
-
-  const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-  
-</script>
   
 </body>
 </html>
