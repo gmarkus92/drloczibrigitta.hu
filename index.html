@@ -198,11 +198,14 @@ header {
   window.addEventListener('load', adjustPadding);
   window.addEventListener('resize', adjustPadding);
 
-  const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
 
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  });
   });
   
 </script>
