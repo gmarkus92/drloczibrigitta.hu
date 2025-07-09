@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <title>Dr. Lóczi Brigitta</title>
+  <style>
+    * {
+
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Nunito", sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 0.5rem;
+    }
+
+    nav a:hover {
+      color: #c6739e;
+    }
+
+    main {
+        padding-top: auto;
+    }
+
+    section {
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .hero {
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #c6739e;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+
+    .hero a:hover {
+      background-color: #b2678e;
+    }
+
+    .bg-light {
+      background-color: #f9f9f9;
+    }
+
+    ul.services {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.services li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #f0f0f0;
+    }
+
+    #szolgaltatasok {
+  text-align: center;
+}
+
+#szolgaltatasok ul {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+#arak {
+  text-align: center;
+}
+
+#arak ul {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+#kapcsolat {
+  text-align: center;
+}
+
+#kapcsolat ul {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigáció -->
+  <header>
+    <nav>
+      <h1>Dr. Lóczi Brigitta</h1>
+      <ul>
+        <li><a href="#rolam">Rólam</a></li>
+        <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+        <li><a href="#csapatunk">Csapatunk</a></li>        
+        <li><a href="#arak">Árak</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero szekció -->
+    <section class="hero" id="kezdolap">
+      <h2>Dr. Lóczi Brigitta</h2>
+      <p>Szülész-nőgyógyász szakorvos | Magánrendelés Kiskunhalason</p>
+      <a href="#kapcsolat">Időpontfoglalás</a>
+    </section>
+
+<!-- Rólam -->
+<section id="rolam" style="background-color: #fff;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+    
+    <!-- Bal oldal: szöveg -->
+    <div style="flex: 1 1 500px;">
+      <h2 style="font-size: 2rem; margin-bottom: 20px;">Rólam</h2>
+      <p style="line-height: 1.6; color: #333;">
+        Dr. Lóczi Brigitta vagyok, szülész-nőgyógyász szakorvos, anya, feleség és nő.<br><br>
+
+        Emlékszem, milyen érzésekkel indultam nőgyógyászhoz. Az orvos-beteg kapcsolat alapja az empátia és bizalom, így női nőgyógyászként arra törekszem, hogy betegeim ne csak mint a szülész-nőgyógyászukkal, hanem mint nővel is őszintén meg tudják beszélni kérdéseiket és panaszaikat.<br><br>
+
+        Munkám során kiemelten fontosnak tartom, hogy a hozzám bizalommal forduló hölgyek számára megteremtsek egy empatikus közeget. Rendelőmben mindig figyelek arra, hogy betegeim számára a nőgyógyászati vizsgálat ne egy kellemetlen élmény legyen, lehetőségük legyen kérdéseiket őszintén feltenni, így bízom benne nem fog évekig halogatott vizsgálattá válni.<br><br>
+
+        Hiszek a megelőzésben, hiszen ezen szemlélet az, amely mind a saját életünket, mind a következő generációk életét meghatározza és megváltoztathatja. Ezen oknál fogva a pácienseim számára a szűrővizsgálatok fontosságát kiemelten hangsúlyozom.<br><br>
+
+        Hogy miért választottam a szülészet-nőgyászatot? Azonnal megragadott a szakma hatalmas változatossága és komplexitása, hiszen a rutin nőgyógyászati ellátás, az ultrahangdiagnosztika, a műtéti ellátás, a szülészet és terhesgondozás olyan széles repertoárt kínál, melyben a mindennapos sikerélmény mindig megtalál. A mindennapi munkám során a szívemhez a terhesgondozás és szülészeti ellátás áll a legközelebb. Felemelő érzéssel tölt el, hogy osztozhatom a párokkal a családdá válás meghitt pillanataiban.<br><br>
+
+        Mint minden orvosi terület esetében, így ebben a szakmában is kiemelten fontos a folyamatos fejlődés és tanulás, a bizonyítékokon alapuló orvoslás. Folyamatosan azon vagyok, hogy minél sokrétűbb és aktuálisabb tudásra tegyek szert. A későbbi terveim között a gyermeknőgyógyászat szakvizsga szerepel.<br><br>
+
+        <strong>Szeretettel várom magánrendelésemen!</strong>
+      </p>
+    </div>
+
+    <!-- Jobb oldal: kép -->
+    <div style="flex: 1 1 400px; text-align: center;">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOo7taLr9NNem4HITwxiRKWAaLevb3VWnJ1OtI54AMux6_Lzjw_LeeWft6yd5TiG8i8JtHPuTSMQPatnccvY9iuMWkNQ31d6v7P6q24cFAhZtHMLC0S73Cs-LjnGD9rqP8vmBWgszHjG-C9G_5_tSAtEQ=w724-h1086-s-no?authuser=0" alt="Dr. Lóczi Brigitta" style="max-width: 100%; height: auto; border-radius: 8px;" />
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Szolgáltatások -->
+    <section class="bg-light" id="szolgaltatasok" style="text-align: center;">
+      <h2>Szolgáltatások</h2>
+    <h3 style="padding-top: 10px;">Szülészet</h3>
+      <ul class="services" style="text-align: center;">
+        <li>✔ Gyermekvállalás előtti tanácsadás</li>
+        <li>✔ Várandósság előtti kivizsgálás</li>
+        <li>✔ Terhesgondozás</li>
+        <li>✔ Szülészeti ultrahang</li>
+    <h3 style="padding: 20px;">Nőgyógyászat</h3>
+        <li>✔ Fogamzásgátlás</li>
+        <li>✔ Nőgyógyászati fertőzések</li>
+        <li>✔ Vérzészavarok</li>
+        <li>✔ Menstruációs zavarok</li>
+        <li>✔ Méhen belüli eszköz felhelyezése és ellenőrzése</li>
+        <li>✔ Nőgyógyászati vizsgálat</li>
+        <li>✔ Méhnyakszűrés</li>
+        <li>✔ Kismedenecei fájdalom</li>
+      </ul>
+    </section>
+
+<section id="csapatunk" style="background-color: #fff;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; justify-content: center;">
+
+    <!-- Csapattag 1 -->
+    <div style="flex: 1 1 300px; text-align: center;">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPIJRhfnp9HCe9GVWT9ucCrS-HhinrdzinWbHKYtu30-6wNjK9isDZpOH9NE9_KaqUtMc0KQtDwRCvmp4ySy0kfZiHGpx174QcaCznXn9mk41WuHR6YZLXrxir-X-OHprDHa21SL8su-7YufPhIihXGWQ=w616-h616-s-no?authuser=0" 
+           alt="Dr. Lóczi Brigitta" 
+           style="max-height: 400px; width: auto; border-radius: 8px;" />
+      <h3 style="margin-top: 15px; font-size: 1.2rem; color: #333;">Dr. Lóczi Brigitta</h3>
+      <p style="color: #666; font-size: 1rem;">Szülész-nőgyógyász szakorvos</p>
+    </div>
+
+    <!-- Csapattag 2 -->
+    <div style="flex: 1 1 300px; text-align: center;">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOGBq1PsNdj-4CJSrIDfVviv54K5YZUGtw1-WDg0PgiHU0aUgluwjTW1BYOo9HwTc69Vt9dhla6dGm-isYVocPi_uHNzwhRBMoaO8j0prnixoyB6hWbnpwiu1JEovI1PVC_S259lwDMPBz7Mf3y7SXOqg=w922-h922-s-no?authuser=0" 
+           alt="Lakóné Péter Marianna" 
+           style="max-height: 400px; width: auto; border-radius: 8px;" />
+      <h3 style="margin-top: 15px; font-size: 1.2rem; color: #333;">Lakóné Péter Marianna</h3>
+      <p style="color: #666; font-size: 1rem;">Asszisztens</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Árak -->
+<section id="arak" class="bg-light" style="text-align: center;">
+  <h2>Árak</h2>
+  <div style="overflow-x: auto;">
+    <table style="margin: 0 auto; border-collapse: collapse; width: 100%; max-width: 600px;">
+      <tbody>
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Valami1</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">20.000 Ft</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Valami2</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">15.000 Ft</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Valami3</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">30.000 Ft</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+<!-- Kapcsolat -->
+<section id="kapcsolat" style="text-align: center;">
+  <h2>Kapcsolat</h2>
+  <p><strong>Cím:</strong> 6400 Kiskunhalas, Szász Károly u. 2.</p>
+  <p><strong>Telefon:</strong> +36 30 082 8500</p>
+  <p><strong>Rendelési idő:</strong> Minden héten csütörtökön 16:00 - 19:00</p>
+
+  <!-- Google Maps iframe -->
+  <div style="margin-top: 30px;">
+    <iframe
+      src="https://www.google.com/maps?q=6400+Kiskunhalas,+Szász+Károly+u.+2.&output=embed"
+      width="100%"
+      height="400"
+      style="border:0; max-width: 1000px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Lábjegyzet -->
+  <footer>
+    © 2025 Dr. Lóczi Brigitta – Minden jog fenntartva.
+  </footer>
+
+</body>
+</html>
