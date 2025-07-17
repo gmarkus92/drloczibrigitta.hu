@@ -71,11 +71,19 @@ header {
       padding: 60px 20px;
     }
 
-    .hero {
-      background-color: #f9f9f9;
-      text-align: center;
-      padding: 100px 20px;
-    }
+.hero {
+  background: linear-gradient(135deg, #ffe3ec 0%, #f7f0fa 100%);
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(198, 115, 158, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(120, 150, 255, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(255, 180, 200, 0.1) 0%, transparent 50%);
+  text-align: center;
+  padding: 20px 20px;
+  padding-bottom: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
 
     .hero h2 {
       font-size: 2.5rem;
@@ -161,6 +169,18 @@ header {
   cursor: pointer;
 }
 
+.nav-brand {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.nav-brand p {
+  margin: 0;
+}
+
+
 /* Mobil nézet */
 @media (max-width: 600px) {
   nav ul {
@@ -214,7 +234,10 @@ header {
   <!-- Navigáció -->
   <header>
     <nav>
-      <h1>Dr. Lóczi Brigitta</h1>
+  <div class="nav-brand" style="font-size: 20px;">
+    <p><b>Dr. Lóczi Brigitta</b></p>
+    <p style="font-size: 14px;">Szülész-nőgyógyász magánrendelés Kiskunhalason</p>
+  </div>
 
         <button id="menu-toggle" aria-label="Menü megnyitása">
     &#9776;
@@ -234,14 +257,48 @@ header {
 
     <!-- Hero szekció -->
     <section class="hero" id="kezdolap">
-      <h2>Dr. Lóczi Brigitta</h2>
-      <p>Szülész-nőgyógyász szakorvos | Magánrendelés Kiskunhalason</p>
-      <a href="#kapcsolat">Időpontfoglalás</a>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px 0 20px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+
+    
+<!-- Bal oldal: szöveg -->
+<div style="flex: 1 1 500px; text-align: left; padding-top: 200px;">
+  <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #b2678e; line-height: 1.2;">
+    Dr. Lóczi Brigitta
+  </h2>
+  <p style="font-size: 1.25rem; color: #555; margin-bottom: 2rem; max-width: 500px;">
+    Szülész-nőgyógyász szakorvos<br>
+  </p>
+<a href="#kapcsolat" style="
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background-color: #c6739e;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(198, 115, 158, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+"
+onmouseover="this.style.transform='scale(1.03)'"
+onmouseout="this.style.transform='scale(1)'"
+>
+  Időpontfoglalás
+</a>
+</div>
+
+
+    <!-- Jobb oldal: kép -->
+    <div style="flex: 1 1 400px; text-align: center; margin-bottom: 0;">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOc2ifcSVSD68oMSs-_BddWGmLvAv6IlTIZKUbMBwq7jIg4Pg9-AYvEMCv8_aR3rMfKUa7ixQ9PcLX76rszcXQn7ci5odScS0rL5MRpebkSQZPaJf5_bcs3pihY9XxMVDiC4Cx9gY4vkgbQaWpVNiTSmg=w924-h1454-s-no?authuser=0" alt="Dr. Lóczi Brigitta" style="max-width: 100%; height: auto; border-radius: 8px; display: block;" />
+    </div>
+
+  </div>
     </section>
 
 <!-- Rólam -->
 <section id="rolam" style="background-color: #fff;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+  <div style="max-width: 1000px; margin: 0 auto; padding: 60px 20px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
     
     <!-- Bal oldal: szöveg -->
     <div style="flex: 1 1 500px;">
@@ -263,10 +320,7 @@ header {
       </p>
     </div>
 
-    <!-- Jobb oldal: kép -->
-    <div style="flex: 1 1 400px; text-align: center;">
-      <img src="https://lh3.googleusercontent.com/pw/AP1GczOo7taLr9NNem4HITwxiRKWAaLevb3VWnJ1OtI54AMux6_Lzjw_LeeWft6yd5TiG8i8JtHPuTSMQPatnccvY9iuMWkNQ31d6v7P6q24cFAhZtHMLC0S73Cs-LjnGD9rqP8vmBWgszHjG-C9G_5_tSAtEQ=w724-h1086-s-no?authuser=0" alt="Dr. Lóczi Brigitta" style="max-width: 100%; height: auto; border-radius: 8px;" />
-    </div>
+
 
   </div>
 </section>
