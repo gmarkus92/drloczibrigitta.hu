@@ -232,7 +232,7 @@ header {
 
   document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.querySelector('nav ul'); // Eredetileg nem volt id="menu", ez így működni fog
+    const menu = document.getElementById('menu');
 
     menuToggle.addEventListener('click', () => {
       menu.classList.toggle('show');
